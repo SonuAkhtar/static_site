@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Hero Section */
+.hero_container {
+  height: 90vh;
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem 0;
+  background-color: #f0f0f0;
+}
+
+.hero_wrapper nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_logo {
+  cursor: pointer;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.nav_link {
+  cursor: pointer;
+}
+
+/* Courses Section */
+.courses_container {
+  height: 70vh;
+  width: 100%;
+  background-color: red;
+}
+
+/* Contact Section */
+.contact_container {
+  height: 50vh;
+  width: 100%;
+  background-color: blue;
+}
+
+/* Footer Section */
+.footer_container {
+  height: 30vh;
+  width: 100%;
+  background-color: green;
+}
