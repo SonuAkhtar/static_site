@@ -8,6 +8,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Hero Section */
@@ -45,8 +46,10 @@ html {
   column-gap: 1rem;
 }
 
-.nav_link {
+.nav_links a {
+  text-decoration: none;
   cursor: pointer;
+  color: #000000;
 }
 
 /* Courses Section */
@@ -65,7 +68,107 @@ html {
 
 /* Footer Section */
 .footer_container {
-  height: 30vh;
+  height: 100%;
   width: 100%;
-  background-color: green;
+  background-color: #2f2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem 0;
+  color: #f5f5f5;
+}
+
+.footer_top {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.footer_middle {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_middle_left {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.footer_middle_left .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.footer_middle_left ul li {
+  list-style: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.footer_middle_right .shape {
+  position: relative;
+  background-color: #4f4f3f;
+  height: 120px;
+  width: 120px;
+  border-radius: 2rem 0 2rem 0;
+}
+
+.social_icons {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.social_icons i {
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.social_icons i:hover {
+  transform: scale(1.25);
+}
+
+.social_icons i.fa-linkedin-square:hover {
+  color: #0072b1;
+}
+
+.social_icons i.fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.social_icons i.fa-twitter-square:hover {
+  color: #00acee;
+}
+
+.social_icons i.fa-instagram:hover {
+  color: #feda75;
+}
+
+.footer_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.footer_bottom_right {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.footer_bottom_right span {
+  cursor: pointer;
 }
