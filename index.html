@@ -13,28 +13,70 @@
   </head>
   <body>
     <!-- Hero Section  -->
-    <section class="hero_container">
-      <div class="hero_wrapper">
+    <section class="section_container hero">
+      <div class="section_wrapper hero">
         <nav>
           <div class="nav_logo">Logo</div>
           <div class="nav_links">
             <a href="#courses" class="nav_link">Courses</a>
             <a href="#contact" class="nav_link">Contact Us</a>
-            <a href="#footer" class="nav_link">About Us</a>
+            <a href="#about" class="nav_link">About Us</a>
           </div>
         </nav>
       </div>
     </section>
 
     <!-- Available Courses Section  -->
-    <section id="courses" class="courses_container">Available Courses</section>
+    <section id="courses" class="section_container courses">
+      <div class="section_wrapper courses">
+        <div class="section_header">
+          <h2>Available Courses</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us Section  -->
+    <section id="about" class="section_container about">
+      <div class="section_wrapper about">
+        <div class="section_header">
+          <h2>About us</h2>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section  -->
-    <section id="contact" class="contact_container">Contact</section>
+    <section id="contact" class="section_container contact">
+      <div class="section_wrapper contact">
+        <div class="section_header">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="contact_main">
+          <div class="contact_main_left">
+            <img src="./assets/contact-img.svg" alt="contact_img" />
+          </div>
+          <div class="contact_main_right">
+            <form class="contact_form">
+              <input type="text" placeholder="Enter your name" />
+              <input type="email" placeholder="Enter your email" />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Enter your message"
+              ></textarea>
+              <div class="submit_btn">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer Section  -->
-    <section id="footer" class="footer_container">
-      <div class="footer_wrapper">
+    <section id="footer" class="section_container footer">
+      <div class="section_wrapper footer">
         <div class="footer_top">Logo</div>
         <div class="footer_middle">
           <div class="footer_middle_left">
@@ -68,7 +110,9 @@
           </div>
 
           <div class="footer_middle_right">
-            <div class="shape"></div>
+            <div class="shape">
+              <div class="shape_logo">Logo</div>
+            </div>
             <div class="social_icons">
               <i class="fa fa-linkedin-square"></i>
               <i class="fa fa-facebook-square"></i>
