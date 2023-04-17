@@ -34,10 +34,26 @@ html {
   font-weight: 400;
 }
 
+.nav_icons {
+  display: none;
+}
+
 /* Hero Section */
 .section_container.hero {
+  position: relative;
   height: 90vh;
-  background-color: #fff;
+  background: rgb(136, 93, 109);
+  background: linear-gradient(
+    66deg,
+    rgba(136, 93, 149, 1) 7%,
+    rgba(29, 113, 149, 1) 50%,
+    rgba(85, 223, 251, 1) 100%
+  );
+  color: #fff;
+}
+
+.section_wrapper.hero {
+  overflow: hidden;
 }
 
 .hero nav {
@@ -48,6 +64,7 @@ html {
 
 .nav_logo {
   cursor: pointer;
+  z-index: 999;
 }
 
 .nav_links {
@@ -66,14 +83,14 @@ html {
 }
 
 .nav_links a:hover {
-  color: #1d7195;
+  color: #fff;
 }
 
 .nav_links a::before {
   position: absolute;
   bottom: -0.25rem;
   content: "";
-  background-color: #1d7195;
+  background-color: #fff;
   height: 2px;
   width: 0;
   transition: all 0.3s ease;
@@ -81,6 +98,27 @@ html {
 
 .nav_links a:hover:before {
   width: 100%;
+}
+
+.hero_main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.hero_logo {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.hero_header {
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 /* Courses Section */
@@ -99,8 +137,8 @@ html {
 
 .courses_cards {
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   column-gap: 3rem;
 }
 
@@ -119,14 +157,14 @@ html {
 }
 
 .courses_card:hover {
-  height: 100%;
+  height: 280px;
   transition: all 0.5s ease;
 }
 
 .courses_card_img {
   position: absolute;
-  top: -2rem;
-  right: -2rem;
+  top: -1rem;
+  right: -1rem;
   height: 100px;
   width: 100px;
   mix-blend-mode: multiply;
@@ -190,6 +228,7 @@ html {
   height: 100%;
   background-color: #fff;
 }
+
 .about_main {
   padding-top: 3rem;
 }
@@ -265,7 +304,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .about_main_card {
@@ -394,7 +434,8 @@ textarea::placeholder {
 .footer_middle_left {
   display: flex;
   justify-content: center;
-  column-gap: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .footer_middle_left .title {
@@ -406,11 +447,17 @@ textarea::placeholder {
   list-style: none;
   cursor: pointer;
   margin-top: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer_middle_left ul li:hover {
+  transform: translateX(5px);
+  transition: all 0.3s ease-in-out;
 }
 
 .footer_middle_right .shape {
   position: relative;
-  background-color: #4f4f3f;
+  background-color: #4d91b5;
   height: 150px;
   width: 150px;
   border-radius: 2rem 0 2rem 0;
@@ -474,4 +521,131 @@ textarea::placeholder {
 
 .footer_bottom_right span {
   cursor: pointer;
+}
+
+/* Tablet Responsive */
+@media only screen and (max-width: 1100px) {
+  .section_wrapper {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .section_header {
+    text-align: center;
+  }
+
+  .nav_links a {
+    color: #fff;
+  }
+
+  /* Courses Section */
+  .courses_cards {
+    gap: 2rem;
+  }
+
+  /* AboutUs Section */
+  .about_main_bottom {
+    padding: 2rem 1rem;
+  }
+
+  .about_main_top_subtitle,
+  .about_main_bottom_info {
+    width: 100%;
+  }
+
+  .about_main_top_img {
+    right: 0;
+    top: -1.5rem;
+  }
+
+  .about_main_cards {
+    gap: 1rem;
+  }
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 600px) {
+  /* Nav Menu */
+  .nav_icons {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .nav_icons .fa-bars,
+  .nav_icons .fa-xmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+    font-size: 1.25rem;
+  }
+
+  .nav_icons .fa-bars.inactive,
+  .nav_icons .fa-xmark.inactive {
+    transform: scale(0);
+  }
+
+  .nav_links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    flex-direction: column;
+    gap: 3rem;
+    transition: all 0.5s ease;
+  }
+
+  .nav_links.inactive {
+    height: 0;
+    width: 0;
+  }
+
+  .nav_links a {
+    font-size: 2rem;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav_links a.inactive {
+    transform: scale(0);
+  }
+
+  .section_container.hero {
+    height: 100vh;
+  }
+
+  /* Contact Section */
+  .contact_main {
+    flex-direction: column;
+  }
+
+  .contact_main_right {
+    width: 90%;
+  }
+
+  /* Footer Section */
+  .section_container.footer {
+    height: 100%;
+  }
+
+  .footer_middle {
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer_middle_left {
+    justify-content: flex-start;
+  }
+
+  .footer_bottom {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
