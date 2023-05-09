@@ -14,10 +14,14 @@
   </head>
   <body>
     <!-- Hero Section  -->
-    <section class="section_container hero">
+    <section id="hero" class="section_container hero">
       <div class="section_wrapper hero">
         <nav>
-          <div class="nav_logo">Analytic-Shala</div>
+          <div class="logo">
+            <a href="#hero">
+              <img src="./assets/analyticshala.logo.png" alt="logo" />
+            </a>
+          </div>
           <div class="nav_icons">
             <i class="fa-solid fa-bars" onclick="navIconClick('burger')"></i>
             <i
@@ -46,7 +50,15 @@
         </nav>
 
         <div class="hero_main">
-          <div class="hero_logo">Analytic-Shala</div>
+          <p>-Your path to analytics-</p>
+          <p>-Unlock the power of data with our analytic courses-</p>
+          <p>Are you afraid of technical challenges</p>
+          <p>
+            Join our courses that drive success with analytics - empowering the
+            data-driven future
+          </p>
+
+          <!-- <div class="hero_logo">Analytic-Shala</div> -->
           <div class="hero_header">Learn from <br />Anywhere, Anytime !</div>
         </div>
       </div>
@@ -66,9 +78,50 @@
           <div class="courses_cards">
             <div class="courses_card">
               <div class="courses_card_img">
-                <img src="./assets/python-logo.jfif" alt="python-img" />
+                <img
+                  src="./assets/data-visualization.png"
+                  alt="visualization-img"
+                />
               </div>
-              <div class="courses_card_title">Python</div>
+              <div class="courses_card_title">Data Visualization</div>
+              <div class="courses_card_info">Python for professionals</div>
+
+              <div class="course_detail">
+                <div class="course_detail_hours">
+                  <span>Hours</span> | <span>200+</span>
+                </div>
+                <div class="course_detail_price">
+                  <span>Full Course</span> | <span>$5000</span>
+                </div>
+                <div class="course_detail_btn">
+                  <button>Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="courses_card">
+              <div class="courses_card_img">
+                <img src="./assets/report-analytics.jfif" alt="reporting-img" />
+              </div>
+              <div class="courses_card_title">Reporting Analytics</div>
+              <div class="courses_card_info">Python for professionals</div>
+
+              <div class="course_detail">
+                <div class="course_detail_hours">
+                  <span>Hours</span> | <span>200+</span>
+                </div>
+                <div class="course_detail_price">
+                  <span>Full Course</span> | <span>$5000</span>
+                </div>
+                <div class="course_detail_btn">
+                  <button>Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="courses_card">
+              <div class="courses_card_img">
+                <img src="./assets/etl-imagee.png" alt="etl-img" />
+              </div>
+              <div class="courses_card_title">ETL</div>
               <div class="courses_card_info">Python for professionals</div>
 
               <div class="course_detail">
@@ -104,9 +157,28 @@
             </div>
             <div class="courses_card">
               <div class="courses_card_img">
-                <img src="./assets/python-logo.jfif" alt="python-img" />
+                <img src="./assets/excel-vba.webp" alt="vba-img" />
               </div>
-              <div class="courses_card_title">Python</div>
+              <div class="courses_card_title">Excel VBA</div>
+              <div class="courses_card_info">Python for professionals</div>
+
+              <div class="course_detail">
+                <div class="course_detail_hours">
+                  <span>Hours</span> | <span>200+</span>
+                </div>
+                <div class="course_detail_price">
+                  <span>Full Course</span> | <span>$5000</span>
+                </div>
+                <div class="course_detail_btn">
+                  <button>Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="courses_card">
+              <div class="courses_card_img">
+                <img src="./assets/tableau.png" alt="tableau-img" />
+              </div>
+              <div class="courses_card_title">Tableau</div>
               <div class="courses_card_info">Python for professionals</div>
 
               <div class="course_detail">
@@ -189,9 +261,9 @@
             <img src="./assets/contact-img.svg" alt="contact_img" />
           </div>
           <div class="contact_main_right">
-            <form class="contact_form">
-              <input type="text" placeholder="Enter your name" />
-              <input type="email" placeholder="Enter your email" />
+            <form class="contact_form" onsubmit="handleSubmit()">
+              <input id="name" type="text" placeholder="Enter your name" />
+              <input id="email" type="email" placeholder="Enter your email" />
               <textarea
                 name="message"
                 id="message"
@@ -211,7 +283,13 @@
     <!-- Footer Section  -->
     <section id="footer" class="section_container footer">
       <div class="section_wrapper footer">
-        <div class="footer_top">Analytic-Shala</div>
+        <div class="footer_top">
+          <div class="logo">
+            <a href="#hero">
+              <img src="./assets/analyticshala.logo.png" alt="logo" />
+            </a>
+          </div>
+        </div>
         <div class="footer_middle">
           <div class="footer_middle_left">
             <div class="footer_middle_left_solution">
@@ -245,7 +323,11 @@
 
           <div class="footer_middle_right">
             <div class="shape">
-              <div class="shape_logo">Analytic-Shala</div>
+              <div class="logo">
+                <a href="#hero">
+                  <img src="./assets/analyticshala.logo.png" alt="logo" />
+                </a>
+              </div>
             </div>
             <div class="social_icons">
               <i class="fa-brands fa-linkedin"></i>

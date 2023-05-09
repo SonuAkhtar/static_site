@@ -29,3 +29,9 @@ const closeMenu = () => {
   navBar.classList.add("inactive");
   navBarLinks.forEach((link) => link.classList.add("inactive"));
 };
+
+// Handle form click
+const handleSubmit = () => {
+  e.preventDefault();
+  debugger;
+};
