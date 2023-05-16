@@ -94,7 +94,7 @@
                   <span>Full Course</span> | <span>$5000</span>
                 </div>
                 <div class="course_detail_btn">
-                  <button>Learn More</button>
+                  <button onclick="coursesClick('data')">Learn More</button>
                 </div>
               </div>
             </div>
@@ -113,7 +113,9 @@
                   <span>Full Course</span> | <span>$5000</span>
                 </div>
                 <div class="course_detail_btn">
-                  <button>Learn More</button>
+                  <button onclick="coursesClick('reporting')">
+                    Learn More
+                  </button>
                 </div>
               </div>
             </div>
@@ -132,7 +134,7 @@
                   <span>Full Course</span> | <span>$5000</span>
                 </div>
                 <div class="course_detail_btn">
-                  <button>Learn More</button>
+                  <button onclick="coursesClick('etl')">Learn More</button>
                 </div>
               </div>
             </div>
@@ -151,7 +153,7 @@
                   <span>Full Course</span> | <span>$5000</span>
                 </div>
                 <div class="course_detail_btn">
-                  <button>Learn More</button>
+                  <button onclick="coursesClick('python')">Learn More</button>
                 </div>
               </div>
             </div>
@@ -170,7 +172,7 @@
                   <span>Full Course</span> | <span>$5000</span>
                 </div>
                 <div class="course_detail_btn">
-                  <button>Learn More</button>
+                  <button onclick="coursesClick('excel')">Learn More</button>
                 </div>
               </div>
             </div>
@@ -189,10 +191,36 @@
                   <span>Full Course</span> | <span>$5000</span>
                 </div>
                 <div class="course_detail_btn">
-                  <button>Learn More</button>
+                  <button onclick="coursesClick('tableau')">Learn More</button>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Available Courses Modal  -->
+      <div id="modal_container" class="courses_modal_container">
+        <div class="courses_modal_wrapper">
+          <div id="close_btn" class="close_btn" onclick="modalClose()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="courses_modal_header">
+            <h2 id="course_title">Course Title</h2>
+          </div>
+          <hr />
+          <div id="courses_modal_top" class="courses_modal_top">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Repellendus, vero rem! Iste, laborum quo porro error culpa hic nulla
+            rerum aut saepe quia cumque! Dignissimos modi facere necessitatibus
+            officia dolor.
+          </div>
+          <hr />
+          <div id="courses_modal_bottom" class="courses_modal_bottom">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+            dolorem vel repellendus suscipit officia consequatur expedita
+            nostrum atque, distinctio nulla modi veritatis facilis minus libero
+            accusantium, pariatur quam ex iure?
           </div>
         </div>
       </div>
